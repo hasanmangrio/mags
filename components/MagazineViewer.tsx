@@ -71,17 +71,17 @@ export default function MagazineViewer({ magazine, trip, photos }: MagazineViewe
       case 'back-cover':
         return <BackCoverPage tripName={trip.name} date={trip.date} />
       case 'full-bleed':
-        return <FullBleedPage imageUrl={urls[0] ?? ''} pageNumber={pageNum} />
+        return <FullBleedPage imageUrl={urls[0] ?? ''} pageNumber={pageNum} tripName={trip.name} pageIndex={index} />
       case 'dual':
-        return <DualPage imageUrls={urls} pageNumber={pageNum} />
+        return <DualPage imageUrls={urls} pageNumber={pageNum} tripName={trip.name} pageIndex={index} />
       case 'grid-4':
-        return <GridPage imageUrls={urls} pageNumber={pageNum} />
+        return <GridPage imageUrls={urls} pageNumber={pageNum} tripName={trip.name} pageIndex={index} />
       case 'editorial':
-        return <EditorialPage imageUrls={urls} pageNumber={pageNum} tripName={trip.name} />
+        return <EditorialPage imageUrls={urls} pageNumber={pageNum} tripName={trip.name} pageIndex={index} />
       case 'trio':
-        return <TrioPage imageUrls={urls} pageNumber={pageNum} />
+        return <TrioPage imageUrls={urls} pageNumber={pageNum} tripName={trip.name} pageIndex={index} />
       default:
-        return <FullBleedPage imageUrl={urls[0] ?? ''} pageNumber={pageNum} />
+        return <FullBleedPage imageUrl={urls[0] ?? ''} pageNumber={pageNum} tripName={trip.name} pageIndex={index} />
     }
   }
 

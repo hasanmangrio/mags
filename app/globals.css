@@ -4,6 +4,9 @@
 @theme inline {
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
+  --color-accent: #B08850;
+  --color-cream: #FEFDF9;
+  --color-rule: #D4CFC6;
 }
 
 * {
